@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Fors3c">
+    
+    <title>
+        
+            Python基础知识复习 |
+        
+        Fors3c&#39;s技术小木屋
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"fors3cdream.github.io","root":"/","language":"zh-CN","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"保持好奇，保持学习，保持对技术的热诚！"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.1"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            <a class="logo-title" href="/">
+                Fors3c&#39;s技术小木屋
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Python基础知识复习</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Fors3c</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-03-06 13:23:57
+    </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Python/">Python</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h4 id="变量-Variables-和字符串-Strings"><a href="#变量-Variables-和字符串-Strings" class="headerlink" title="变量(Variables)和字符串(Strings)"></a>变量(Variables)和字符串(Strings)</h4><p><b>变量:</b>用于存储值。</p>
+<p><b>字符串:</b>是一串字符的集合，由单引号对(‘’)、双引号对(“”)或者三引号对(可以是连续三个单引号或双引号)包围。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 直接打印 Hello World</span><br><span class="line">print('Hello World')</span><br><span class="line"></span><br><span class="line"># 通过变量打印</span><br><span class="line">msg = 'Hello World'</span><br><span class="line">print(msg)</span><br><span class="line"></span><br><span class="line"># Python3.6之后新添加的特性 f-string，在变量中使用字符串</span><br><span class="line">first_name = 'albert'</span><br><span class="line">last_name = 'einstein'</span><br><span class="line">full_name = f"{first_name} {last_name}"</span><br><span class="line">print(full_name)</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="列表-Lists"><a href="#列表-Lists" class="headerlink" title="列表(Lists)"></a>列表(Lists)</h4><p><b>列表：</b>通过特殊的顺序存储一系列值。可通过索引或者循环的方式访问列表中保存的值。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"># 定义一个列表</span><br><span class="line">bikes = ['trek', 'redline', 'giant']</span><br><span class="line"></span><br><span class="line"># 获取列表的第一个值</span><br><span class="line">first_bike = bikes[0]</span><br><span class="line"></span><br><span class="line"># 获取列表中的最后一个值</span><br><span class="line">last_bike = bikes[-1]</span><br><span class="line"></span><br><span class="line"># 通过循环打印列表中的值</span><br><span class="line">for bike in bikes:</span><br><span class="line">    print(bike)</span><br><span class="line"></span><br><span class="line"># 添加数据到列表</span><br><span class="line">bikes = []</span><br><span class="line">bikes.append('trek')</span><br><span class="line">bikes.append('redline')</span><br><span class="line">bikes.append('giant')</span><br><span class="line"></span><br><span class="line"># 生成一个数字列表</span><br><span class="line">squares = []</span><br><span class="line">for x in range(1, 11):</span><br><span class="line">    squares.append(x**2)</span><br><span class="line"></span><br><span class="line"># 列表生成式</span><br><span class="line">squares = [x**2 for x in range(1, 11)]</span><br><span class="line"></span><br><span class="line"># 列表切片</span><br><span class="line">finishers = ['sam', 'bob', 'ada', 'bea']</span><br><span class="line">first_two = finishers[:2]</span><br><span class="line"></span><br><span class="line"># 复制列表</span><br><span class="line">copy_of_bikes = bikes[:]</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="元组-tuples"><a href="#元组-tuples" class="headerlink" title="元组(tuples)"></a>元组(tuples)</h4><p><b>元组：</b>与列表类似，但元组中的数据是不可变的，也就是说一个元组在初始化以后，就不能改变其中的值，包括删除，添加，更新等。如果元组中存储的值是可变的（如列表），在对可变值进行操作后就生成了新的元组，跟原来的元组就不是同一个内存值了。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 生成一个元组</span><br><span class="line">dimensions = (1920, 1080)</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><p><b>字典：</b>存储序列之间的关系。字典中的每一个项是一个key-value对。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 生成字典</span><br><span class="line">alien = {'color': 'green', 'points': 5}</span><br><span class="line"></span><br><span class="line"># 访问一个项的值</span><br><span class="line">print(f"The alien's color is {alien['color']}")</span><br><span class="line"></span><br><span class="line"># 往字典中添加新的key-value对</span><br><span class="line">alien['x_position'] = 0</span><br><span class="line"></span><br><span class="line"># 通过循环访问字典中的所有项</span><br><span class="line">fav_numbers = {'eric': 17, 'ever': 4}</span><br><span class="line">for name, number in fav_numbers.items():</span><br><span class="line">    print(f"{name} loves {number}")</span><br><span class="line"></span><br><span class="line"># 只获取key的值</span><br><span class="line">for name in fav_numbers.keys():</span><br><span class="line">    print(f"{name} loves a number")</span><br><span class="line"></span><br><span class="line"># 只获取所有的value值</span><br><span class="line">for number in fav_numbers.values():</span><br><span class="line">    print(f"{number} is favorite")</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="用户输入"><a href="#用户输入" class="headerlink" title="用户输入"></a>用户输入</h4><p>程序可通过input函数接收用户的输入，所有的输入数据都被存储在字符串中。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 提示用户输入一个值</span><br><span class="line">name = input("What's your name? ")</span><br><span class="line">print(f"Hello {name}")</span><br><span class="line"></span><br><span class="line"># 提示用户输入一个数字</span><br><span class="line">age = input("How old are you？ ")</span><br><span class="line"></span><br><span class="line"># 将字符类型转换为整数型</span><br><span class="line">age = int(age)</span><br><span class="line"></span><br><span class="line"># 提示用户输入一个小数</span><br><span class="line">pi = input("Waht's the value of pi? ")</span><br><span class="line">pi = float(pi)</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h4><p><b>if语句：</b>用于测试特定的条件并做出适当的响应（即执行对应的代码）。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">"""</span><br><span class="line"># 条件</span><br><span class="line"># 等于</span><br><span class="line">x == 42</span><br><span class="line"></span><br><span class="line"># 不等于</span><br><span class="line">x != 42</span><br><span class="line"></span><br><span class="line"># 大于</span><br><span class="line">x &gt; 42</span><br><span class="line"></span><br><span class="line"># 大于等于</span><br><span class="line">x &gt;= 42</span><br><span class="line"></span><br><span class="line"># 小于</span><br><span class="line">x &lt; 42</span><br><span class="line"></span><br><span class="line"># 小于等于</span><br><span class="line">x &lt;= 42</span><br><span class="line">"""</span><br><span class="line"></span><br><span class="line"># 通过列表来判断条件</span><br><span class="line">'trek' in bikes # return True</span><br><span class="line">'surly' in bikes # return False</span><br><span class="line"></span><br><span class="line"># 将boolean值赋值给变量</span><br><span class="line">game_active = True</span><br><span class="line">can_edit = False</span><br><span class="line"></span><br><span class="line"># 简单条件判断</span><br><span class="line">if age &gt;= 18:</span><br><span class="line">    print("You can vote!")</span><br><span class="line"># 如果只有单个条件，后续的代码就不需要了</span><br><span class="line">else:</span><br><span class="line">    print(You can't vote!")</span><br><span class="line"></span><br><span class="line"># if-elif-else语句</span><br><span class="line">if age &lt; 4:</span><br><span class="line">    ticket_price = 0</span><br><span class="line">elif age &lt; 18:</span><br><span class="line">    ticket_price = 10</span><br><span class="line">else:</span><br><span class="line">    ticket_price = 15</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><p>while循环按照特定的条件对一块代码块进行重复执行。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 一个简单的while循环</span><br><span class="line">current_value = 1</span><br><span class="line">while current_value &lt;= 5:</span><br><span class="line">    print(current_value)</span><br><span class="line">    current_value += 1</span><br><span class="line"></span><br><span class="line"># 根据用户的特定输入来结束循环</span><br><span class="line">msg = ''</span><br><span class="line">while msg!='quit':</span><br><span class="line">    msg = input("What's your messag? ")</span><br><span class="line">    print(msg)</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><p>for循环用于遍历可迭代访问数据中的所有数据。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 简单的for循环</span><br><span class="line">a_list = ['a', 'b', 'c']</span><br><span class="line">for item in a_list:</span><br><span class="line">    print(item)</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="functions-函数"><a href="#functions-函数" class="headerlink" title="functions - 函数"></a>functions - 函数</h4><p>函数是一段代码块的名字，用于完成特定的工作。传递给函数的值被称为argument，函数中接收argument的值被称为parameter。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"># 声明一个简单的函数</span><br><span class="line">def greet_user():</span><br><span class="line">    """</span><br><span class="line">    一个无参数的函数，用于打印一个简单的问候语。</span><br><span class="line">    """</span><br><span class="line">    print('Hello')</span><br><span class="line">greet_user()</span><br><span class="line"></span><br><span class="line"># 传递一个argument给函数</span><br><span class="line">def greet_user(name):</span><br><span class="line">    """</span><br><span class="line">    带参数的函数，name被成为parameter，调用函数传入的值被成为argument</span><br><span class="line">    """</span><br><span class="line">    print(f"Hello, {name}")</span><br><span class="line">greet_user('jesse')</span><br><span class="line"></span><br><span class="line"># parameter带默认值的函数，带默认值的参数在声明函数时一般放在不带默认值的参数后面</span><br><span class="line">def make_pizza(size:int, topping: str='bacon'):</span><br><span class="line">    print(f"Have a {size} {topping} pizza!")</span><br><span class="line">make_pizza(5) # topping使用默认值</span><br><span class="line"></span><br><span class="line">make_pizza(6, 'pepperoni') # topping使用传入的值</span><br><span class="line"></span><br><span class="line"># 带返回值的函数</span><br><span class="line">def add_number(x: int, y: int) -&gt; int:</span><br><span class="line">    """</span><br><span class="line">    两个整数相加，并返回相加之后的和。</span><br><span class="line">    """</span><br><span class="line">    return x+y</span><br><span class="line">sum = add_number(3, 5)</span><br><span class="line">print(sum)</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="class-类"><a href="#class-类" class="headerlink" title="class - 类"></a>class - 类</h4><p><b>类：</b>用来定义一个object的特性和属性。一个具体类的信息存储在attributes中。类中的函数被称作方法。一个子类可以继承父类的属性和方法。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"># 创建一个简单的类</span><br><span class="line">class Dog:</span><br><span class="line">    """</span><br><span class="line">    # 类说明，用于写注释</span><br><span class="line">    """</span><br><span class="line">    def __init__(self, name):</span><br><span class="line">        """</span><br><span class="line">        # 注释</span><br><span class="line">        """</span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">    def sit(self):</span><br><span class="line">        """</span><br><span class="line">        # 注释</span><br><span class="line">        """</span><br><span class="line">        print(f"{self.name} is sitting!")</span><br><span class="line"></span><br><span class="line">my_dog = Dog('Peso') # 实现一个类实例</span><br><span class="line">print(f"{my_dog.name} is a great dog”)</span><br><span class="line">my_dog.sit()</span><br><span class="line"></span><br><span class="line"># 子类继承父类</span><br><span class="line">class SARDog(Dog):</span><br><span class="line">    """</span><br><span class="line">    """</span><br><span class="line">    def __init__(self, name):</span><br><span class="line">        """</span><br><span class="line">        """</span><br><span class="line">        super().__init__(name)</span><br><span class="line"></span><br><span class="line">    def search(self):</span><br><span class="line">        """</span><br><span class="line">        """</span><br><span class="line">        print(f"{self.name} is searching.")</span><br><span class="line"></span><br><span class="line">new_dog = SARDog('Willie')</span><br><span class="line"></span><br><span class="line">print(f"{new_dog.name} is a search dog.")</span><br><span class="line">new_dog.sit()</span><br><span class="line">new_dog.search()</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="处理文件"><a href="#处理文件" class="headerlink" title="处理文件"></a>处理文件</h4><p>文件可以通过open方式以读(‘r’)、写(‘w’)和追加(‘a’)的方式来打开。注意一点，对于文件中的内容，需要指定encoding编码方式。默认方式为读。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 读文件，并存储其中的内容</span><br><span class="line">filename = 'siddhartha.txt'</span><br><span class="line"></span><br><span class="line">with open(filename, encoding='utf-8') as file_object:</span><br><span class="line">    lines = file_object.readlines()</span><br><span class="line"></span><br><span class="line"># 通过追加的方式写文件，如果用写的方式的话会覆盖掉之前的内容</span><br><span class="line">filename = 'journal.txt'</span><br><span class="line">with open(filename, 'a', encoding='utf-8') as file_object:</span><br><span class="line">    file_object.write('\nI love Python.")</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h4><p>如果在程序中不进行异常处理，程序会退出。比如在写爬虫时，如果一个地址无法访问到，程序中也没有对此异常进行处理，那程序退出后，已爬取的地址又得再爬一次。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">promt = "How many tickets do you need？"</span><br><span class="line">num_tickets = input(promt)</span><br><span class="line"></span><br><span class="line">try: # 尝试执行代码</span><br><span class="line">    num_tickets = int(num_tickets)</span><br><span class="line">except ValueError:</span><br><span class="line">    print("Please try again.")</span><br><span class="line">else:</span><br><span class="line">    print("Your tickets are printing.")</span><br></pre></td></tr></tbody></table></figure>
+        </div>
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/cklxasuns00025dx97ykvev1s.html"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">2021年的小计划</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Fors3c</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.1</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+<script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/header-shrink.js"></script><script src="/js/back2top.js"></script><script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>
