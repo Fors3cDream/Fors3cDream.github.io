@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Fors3c">
+    
+    <title>
+        
+            Python复习--字典 |
+        
+        Fors3c&#39;s技术小木屋
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"fors3cdream.github.io","root":"/","language":"zh-CN","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"保持好奇，保持学习，保持对技术的热诚！"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.1"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            <a class="logo-title" href="/">
+                Fors3c&#39;s技术小木屋
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Python复习--字典</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Fors3c</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-03-08 20:22:39
+    </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Python/">Python</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>dict（字典）类型是Python语言的基石。在模块的命名空间、实例的属性和函数的关键字参数之中都可以看到字典的身影。与字典有关的内置函数都在__builtins__.__dict__模块中。<em>散列表</em>是字典类型性能出众的根本原因。</p>
+<p>set（集合）类型的实现其实也是依赖于散列表。</p>
+<p>想要进一步理解集合和字典，就得先理解散列表的原理。</p>
+<h4 id="泛型映射类型"><a href="#泛型映射类型" class="headerlink" title="泛型映射类型"></a>泛型映射类型</h4><p>collections.abc模块中的Mapping和MutableMapping两个抽象基类，为dict和其他类似的类型定义形式接口。</p>
+<p>非抽象映射类型一般不会直接继承这些抽象基类，而会直接对dict或是collections.UserDict进行扩展。这些抽象基类的主要作用定义了一个映射类型所需要的的最基本的接口。还能跟isinstance一起被用于判断某个数据是不是广义上的映射类型。</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">my_dict = {}</span><br><span class="line"><span class="built_in">isinstance</span>(my_dict, abc.Mapping) <span class="comment"># 返回 True</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>映射类型都由一个共同的限制，只有<b>可散列</b>的数据类型才能用作映射里的键。</p>
+<h4 id="字典推导（dictcmop"><a href="#字典推导（dictcmop" class="headerlink" title="字典推导（dictcmop)"></a>字典推导（dictcmop)</h4><p><b>字典推导</b>可以用来建造新dict，可以从任何以键值对作为元素的可迭代对象中构建新字典。</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 以数为元组的列表生成字典</span></span><br><span class="line"></span><br><span class="line">DIAL_CODES = [(<span class="number">86</span>, <span class="string">'China'</span>), (<span class="number">91</span>, <span class="string">'India'</span>),</span><br><span class="line">              (<span class="number">1</span>, <span class="string">'United States'</span>), (<span class="number">62</span>, <span class="string">'Indonesia'</span>)]</span><br><span class="line"></span><br><span class="line">country_code = {country: code <span class="keyword">for</span> code, country <span class="keyword">in</span> DIAL_CODES}</span><br><span class="line"></span><br><span class="line"><span class="comment"># country_code = {'China': 86, ...}</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="用setdefault处理找不到的键"><a href="#用setdefault处理找不到的键" class="headerlink" title="用setdefault处理找不到的键"></a>用setdefault处理找不到的键</h4><p>当字典d[k]不能找到正确的键的时候，会抛出异常。这时候可以使用d.get(k, default)来代替d[k]，给找不到的键一个默认的返回值。但是要更新某个键对应的值的时候，不管使用__getitem__还是get都会不自然，并且效率很低。dict.get并不是处理找不到的键的最好方法。</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">WORD_RE = re.<span class="built_in">compile</span>(<span class="string">r'\w+'</span>)</span><br><span class="line"></span><br><span class="line">index = {}</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(sys.argv[<span class="number">1</span>], encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    <span class="keyword">for</span> index, line <span class="keyword">in</span> <span class="built_in">enumerate</span>(fp, <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">for</span> match <span class="keyword">in</span> WORD_RE.finditer(line):</span><br><span class="line">            word = match.group()</span><br><span class="line">            column_no = match.start()+<span class="number">1</span></span><br><span class="line">            <span class="comment"># 记录所出现的行和列</span></span><br><span class="line">            location = (index, column_no)</span><br><span class="line">            <span class="comment"># 使用get实现</span></span><br><span class="line">            <span class="comment"># occurrences = index.get(word, []) # 如果没有找到，返回[]</span></span><br><span class="line">            <span class="comment"># occurrences.append(location)</span></span><br><span class="line">            <span class="comment"># index[word] = occurrences</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 使用setdefault一行代码实现</span></span><br><span class="line">            index.setdefault(word, []).append(location)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以字母顺序进行打印</span></span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> <span class="built_in">sorted</span>(index, key=<span class="built_in">str</span>.upper):</span><br><span class="line">    print(word, index[word])</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="映射的弹性查询"><a href="#映射的弹性查询" class="headerlink" title="映射的弹性查询"></a>映射的弹性查询</h4><p>有时候为了方便，就算某个键在映射里不存在，开发者也希望能通过这个键读取值的时候能得到一个默认值。有两种方法可以达到这个目的，一个是通过defaultdict这个类型而不是普通的dict，另一个是自定义一个dict子类，然后在子类中实现__missing__方法。</p>
+<h5 id="defaultdict：处理找不到键的一个选择"><a href="#defaultdict：处理找不到键的一个选择" class="headerlink" title="defaultdict：处理找不到键的一个选择"></a>defaultdict：处理找不到键的一个选择</h5><p>用户在创建defaultdict对象的时候，就需要给它配置一个找不到键的时候返回的默认值的方法。</p>
+<p>具体来说，在实例化一个defaultdict的时候，需要给构造方法提供一个可调用对象，这个对象会在__getitem__找不到键的时候被调用，返回某种默认值。</p>
+<p>比如，在新建一个字典，dd=defaultdict(list)，如果键’new-key’在dd中不存在的话，dd[‘new-key’]会进行如下的操作：</p>
+<ol>
+<li>调用list()来建立一个新列表。</li>
+<li>新列表作为值，’new-key’作为键，放入dd中。</li>
+<li>返回这个列表的引用。</li>
+</ol>
+<p>这个用来生成新默认值的可调用对象存放在名为default_factory的实例属性中。</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> collections</span><br><span class="line"></span><br><span class="line">WORD_RE = re.<span class="built_in">compile</span>(<span class="string">r'\w+'</span>)</span><br><span class="line"></span><br><span class="line">index = collections.defaultdict(<span class="built_in">list</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(sys.argv[<span class="number">1</span>], encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    <span class="keyword">for</span> index, line <span class="keyword">in</span> <span class="built_in">enumerate</span>(fp, <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">for</span> match <span class="keyword">in</span> WORD_RE.finditer(line):</span><br><span class="line">            word = match.group()</span><br><span class="line">            column_no = match.start() + <span class="number">1</span></span><br><span class="line">            location = (index, column_no)</span><br><span class="line">            index[word].append(location)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以字母顺序进行打印</span></span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> <span class="built_in">sorted</span>(index, key=<span class="built_in">str</span>.upper):</span><br><span class="line">    print(word, index[word])</span><br></pre></td></tr></tbody></table></figure>
+        </div>
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/cklzcr67x00004kx9c3y8d5wi.html"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">新坑开挖-Go</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Fors3c</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.1</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+<script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/header-shrink.js"></script><script src="/js/back2top.js"></script><script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
